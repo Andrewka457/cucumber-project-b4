@@ -1,9 +1,7 @@
-package io.loop.test.utilities;
+package io.loop.utilities;
 
-import io.loop.utilities.ConfigurationReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -15,8 +13,7 @@ public class Driver {
     Creating the private constructor so this class's object is not reachable from outside
      */
 
-    private Driver() {
-    }
+    private Driver(){}
 
     /*
     making driver instance private
@@ -31,13 +28,12 @@ public class Driver {
 
     /**
      * singleton pattern
-     *
      * @return
      */
-    public static WebDriver getDriver() {
-        if (driver == null) {
+    public static WebDriver getDriver(){
+        if(driver==null){
             String browserType = ConfigurationReader.getProperties("browser");
-            switch (browserType.toLowerCase()) {
+            switch (browserType.toLowerCase()){
                 case "chrome":
                     driver = new ChromeDriver();
                     break;
@@ -47,14 +43,7 @@ public class Driver {
                     break;
 
                 case "safari":
-                    driver = new SafariDriver();
-                    break;
-                case "headless":
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless");
-                    options.addArguments("--disable-gpu");
-                    options.addArguments("--window-size=2560,1440");
-                    driver = new ChromeDriver(options);
+                    driver =  new SafariDriver();
                     break;
             }
             driver.manage().window().maximize();
@@ -65,13 +54,12 @@ public class Driver {
 
     /**
      * closing driver
-     *
      * @author nsh
      */
-    public static void closeDriver() {
-        if (driver != null) {
+    public static void closeDriver(){
+        if(driver!=null){
             driver.quit();
-            driver = null;
+            driver=null;
         }
     }
 }
