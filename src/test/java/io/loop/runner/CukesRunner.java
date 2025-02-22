@@ -10,8 +10,9 @@ import io.cucumber.junit.Cucumber;
                 "json:target/json-reports/json-report.json"},
         features = "src/test/resources/features",
         glue = "io/loop/step_definitions",
-        dryRun = true,
-        tags = "@google_search"
+        dryRun = false,
+        tags = "@google_search_outline or @google_search_data_table",
+        monochrome = false
 
 )
 

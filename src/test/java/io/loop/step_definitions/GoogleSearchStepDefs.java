@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -67,6 +68,43 @@ public class GoogleSearchStepDefs {
         wait.until(ExpectedConditions.titleIs(expectedTitle));
         String actualTitle = Driver.getDriver().getTitle();
         assertEquals("Expected result does not match the actual", expectedTitle, actualTitle);
+    }
+
+    @Then("user searches the following items")
+    public void user_searches_the_following_items(List<String> items) {
+//        for (String item : items) {
+//            googleSearchPage.searchBox.clear();
+//            googleSearchPage.searchBox.sendKeys(item + Keys.ENTER);
+//            googleSearchPage.handleCaptcha(Driver.getDriver(), googleSearchPage.captcha);
+//            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+//            wait.until(ExpectedConditions.titleIs(item + " - Google Search"));
+//            assertEquals("Expected does not match the actual",item + " - Google Search",Driver.getDriver().getTitle());
+//        }
+
+        items.forEach(p-> {
+            googleSearchPage.searchBox.clear();
+            googleSearchPage.searchBox.sendKeys(p + Keys.ENTER);
+            googleSearchPage.handleReCaptcha(Driver.getDriver(), googleSearchPage.captcha);
+            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.titleIs(p + " - Google Search"));
+            assertEquals("Expected does not match the actual",p + " - Google Search",Driver.getDriver().getTitle());
+        });
+
+    }
+
+    @Then("we love Loop Academy")
+    public void we_love_loop_academy() {
+        System.out.println("We Love Loop Academy");
+    }
+
+    @When("user search for {string}")
+    public void user_search_for(String country) {
+        googleSearchPage.searchBox.sendKeys("What is the capital of " + country +Keys.ENTER);
+    }
+    @Then("user should see the {string} in the results")
+    public void user_should_see_the_in_the_results(String capital) {
+        googleSearchPage.handleReCaptcha(Driver.getDriver(), googleSearchPage.captcha);
+        assertEquals("Expected capital city: " + capital + " does not match with actual one: " + googleSearchPage.capital.getText(), capital, googleSearchPage.capital.getText());
     }
 
 }
