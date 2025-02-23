@@ -26,7 +26,7 @@ public class GoogleSearchStepDefs {
     @Given("user in on Google search page")
     public void user_in_on_google_search_page() {
         Driver.getDriver().get(ConfigurationReader.getProperties("google.url"));
-        BrowserUtils.takeScreenshot();
+//        BrowserUtils.takeScreenshot();
     }
     @When("user types Loop Academy in the google search box and clicks enter")
     public void user_types_loop_academy_in_the_google_search_box_and_clicks_enter() throws InterruptedException {
