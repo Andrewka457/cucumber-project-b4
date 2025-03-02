@@ -11,7 +11,7 @@ import io.cucumber.junit.Cucumber;
         features = "src/test/resources/features",
         glue = "io/loop/step_definitions",
         dryRun = false,
-        tags = "@google_search_outline or @google_search_data_table",
+        tags = "@smoke",
         monochrome = false
 
 )

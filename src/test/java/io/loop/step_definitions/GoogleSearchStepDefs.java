@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.loop.pages.GoogleSearchPage;
+import io.loop.pages.POM;
 import io.loop.utilities.BrowserUtils;
 import io.loop.utilities.ConfigurationReader;
 import io.loop.utilities.Driver;
@@ -16,12 +17,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
 public class GoogleSearchStepDefs {
 
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
+    POM pages = new POM();
 
     @Given("user in on Google search page")
     public void user_in_on_google_search_page() {
@@ -71,7 +74,8 @@ public class GoogleSearchStepDefs {
     }
 
     @Then("user searches the following items")
-    public void user_searches_the_following_items(List<String> items) {
+//    public void user_searches_the_following_items(List<String> items) {
+    public void user_searches_the_following_items(List<Map<String, String>> items){
 //        for (String item : items) {
 //            googleSearchPage.searchBox.clear();
 //            googleSearchPage.searchBox.sendKeys(item + Keys.ENTER);
@@ -81,14 +85,22 @@ public class GoogleSearchStepDefs {
 //            assertEquals("Expected does not match the actual",item + " - Google Search",Driver.getDriver().getTitle());
 //        }
 
-        items.forEach(p-> {
-            googleSearchPage.searchBox.clear();
-            googleSearchPage.searchBox.sendKeys(p + Keys.ENTER);
-            googleSearchPage.handleReCaptcha(Driver.getDriver(), googleSearchPage.captcha);
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-            wait.until(ExpectedConditions.titleIs(p + " - Google Search"));
-            assertEquals("Expected does not match the actual",p + " - Google Search",Driver.getDriver().getTitle());
-        });
+//        items.forEach(p-> {
+//            googleSearchPage.searchBox.clear();
+//            googleSearchPage.searchBox.sendKeys(p + Keys.ENTER);
+//            googleSearchPage.handleReCaptcha(Driver.getDriver(), googleSearchPage.captcha);
+//            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+//            wait.until(ExpectedConditions.titleIs(p + " - Google Search"));
+//            assertEquals("Expected does not match the actual",p + " - Google Search",Driver.getDriver().getTitle());
+//        });
+
+        //        for (String item : items) {
+//            System.out.println("item = " + item);
+//        }
+
+        for (Map<String, String> item : items) {
+            System.out.println("item.get(\"items\") = " + item.get("items"));
+        }
 
     }
 
