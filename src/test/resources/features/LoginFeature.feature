@@ -1,3 +1,4 @@
+@headless
 Feature: Docuport Login Logout Feature
 
 
@@ -10,7 +11,7 @@ Feature: Docuport Login Logout Feature
     When user enters username for client
     And user enters password for client
     And user click login button
-    Then user should bbe able to see the home for client
+    Then user should be able to see the home for client
 
   @smoke
   Scenario: Login as a employee
@@ -33,3 +34,9 @@ Feature: Docuport Login Logout Feature
     And user click login button
     Then user should bbe able to see the home for supervisor
 
+  @dataTableLogin
+  Scenario: Login as a client map practice
+    When user enters credentials
+      | username | b1g1_client@gmail.com |
+      | password | Group1                |
+    Then user should be able to see the home for client

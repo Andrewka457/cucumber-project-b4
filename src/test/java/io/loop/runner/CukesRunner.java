@@ -6,18 +6,21 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/html-reports/cucumber-report.html",
-                "json:target/json-reports/json-report.json"},
-        features = "src/test/resources/features",
+        plugin = {"pretty",
+                "html:target/html-reports/cucumber-report.html",
+                "json:target/json-reports/json-report.json",
+                "rerun:target/rerun.txt",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+        features = "C:/Users/Andrey/IdeaProjects/cucumber-project-b4/src/test/resources/features",
         glue = "io/loop/step_definitions",
         dryRun = false,
-        tags = "@google_search_outline or @google_search_data_table",
-        monochrome = false
+        tags = "@smoke",
+        monochrome = false,
+        publish = false
 
 )
 
 public class CukesRunner {
-
 
 
 }
