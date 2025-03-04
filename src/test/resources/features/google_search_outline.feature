@@ -1,7 +1,7 @@
 Feature: Scenario Outline practice
 
-  @google_search_outline
-  Scenario Outline:
+  @google_search_outline @smoke
+  Scenario Outline: Validate countries capitals
     Given user in on Google search page
     When user search for "<country>"
     Then user should see the "<capital>" in the results

@@ -74,8 +74,8 @@ public class GoogleSearchStepDefs {
     }
 
     @Then("user searches the following items")
-//    public void user_searches_the_following_items(List<String> items) {
     public void user_searches_the_following_items(List<Map<String, String>> items){
+        //    public void user_searches_the_following_items(List<String> items) {
 //        for (String item : items) {
 //            googleSearchPage.searchBox.clear();
 //            googleSearchPage.searchBox.sendKeys(item + Keys.ENTER);

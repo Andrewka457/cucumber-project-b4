@@ -1,3 +1,4 @@
+@headless
 Feature: Docuport Login Logout Feature
 
 

@@ -1,3 +1,4 @@
+@headless
 Feature: product data table practice
 
   @listOfMap

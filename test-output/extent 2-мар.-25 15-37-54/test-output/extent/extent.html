@@ -1,0 +1,1220 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">мар. 2, 2025 03:37:54 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@B4G2A-169</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@xray</a><a class="dropdown-item" href="#">@B4G2A-162</a><a class="dropdown-item" href="#">@headless</a><a class="dropdown-item" href="#">@google_search_data_table</a><a class="dropdown-item" href="#">@B4G2A-122</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Docuport Login Logout Feature</p>
+            <p class="text-sm">
+              <span>15:37:54</span> / <span>00:00:09:945</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Docuport Login Logout Feature</h5>
+<span class='badge badge-success'>03.02.2025 15:37:54</span>
+<span class='badge badge-danger'>03.02.2025 15:38:04</span>
+<span class='badge badge-default'>00:00:09:945</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login as a client</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_username_for_client()">
+                <span>When user enters username for client</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_password_for_client()">
+                <span>And user enters password for client</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_click_login_button()">
+                <span>And user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_should_be_able_to_see_the_home_for_client()">
+                <span>Then user should be able to see the home for client</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Login as a employee</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_username_for_employee()">
+                <span>When user enters username for employee</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_password_for_employee()">
+                <span>And user enters password for employee</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_click_login_button()">
+                <span>And user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_should_bbe_able_to_see_the_home_for_employee()">
+                <span>Then user should bbe able to see the home for employee</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Login as a advisor</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_username_for_advisor()">
+                <span>When user enters username for advisor</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_password_for_advisor()">
+                <span>And user enters password for advisor</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_click_login_button()">
+                <span>And user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_should_bbe_able_to_see_the_home_for_advisor()">
+                <span>Then user should bbe able to see the home for advisor</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>Login as a supervisor</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_username_for_supervisor()">
+                <span>When user enters username for supervisor</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_password_for_supervisor()">
+                <span>And user enters password for supervisor</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_click_login_button()">
+                <span>And user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_should_bbe_able_to_see_the_home_for_supervisor()">
+                <span>Then user should bbe able to see the home for supervisor</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Demo how to upload json report to xray</p>
+            <p class="text-sm">
+              <span>15:38:04</span> / <span>00:00:02:490</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Demo how to upload json report to xray</h5>
+<span class='badge badge-success'>03.02.2025 15:38:04</span>
+<span class='badge badge-danger'>03.02.2025 15:38:07</span>
+<span class='badge badge-default'>00:00:02:490</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Login as a client</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_username_for_client()">
+                <span>When user enters username for client</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_enters_password_for_client()">
+                <span>And user enters password for client</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_click_login_button()">
+                <span>And user click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.LoginStepDefs.user_should_be_able_to_see_the_home_for_client()">
+                <span>Then user should be able to see the home for client</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Google Search Functionality Title Verification</p>
+            <p class="text-sm">
+              <span>15:38:07</span> / <span>00:00:21:918</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Google Search Functionality Title Verification</h5>
+<span class='badge badge-success'>03.02.2025 15:38:07</span>
+<span class='badge badge-danger'>03.02.2025 15:38:28</span>
+<span class='badge badge-default'>00:00:21:918</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> User Story: As a user, when I am on the Google search page
+I should be able to search whatever I want and see the relevant information</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log fail-bg mr-2">Fail</span>Search functionality result title verification</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_in_on_google_search_page()">
+                <span>Given user in on Google search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_types_loop_academy_in_the_google_search_box_and_clicks_enter()">
+                <span>When user types Loop Academy in the google search box and clicks enter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_should_be_see_loop_academy_google_search_in_the_google_title()">
+                <span>Then user should be see Loop Academy - Google search in the google title</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: Expected result does not match the actual expected:<[Loop Academy - Google Search]> but was:<[https://www.google.com/search?q=Loop+Academy&sca_esv=45ef1915294fa958&source=hp&ei=rsHEZ8vcGfbS5NoPjtGY0Q0&iflsig=ACkRmUkAAAAAZ8TPvtUjH26f6Ytgu9PP_DQEy-scCL2C&ved=0ahUKEwjL696ioOyLAxV2KVkFHY4oJtoQ4dUDCBA&uact=5&oq=Loop+Academy&gs_lp=Egdnd3Mtd2l6IgxMb29wIEFjYWRlbXlIGVAAWBdwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcA&sclient=gws-wiz&sei=r8HEZ42SDoiv5NoPp-uSsAc]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at io.loop.step_definitions.GoogleSearchStepDefs.user_should_be_see_loop_academy_google_search_in_the_google_title(GoogleSearchStepDefs.java:54)
+	at ✽.user should be see Loop Academy - Google search in the google title(file:///C:/Users/Andrey/IdeaProjects/cucumber-project-b4/src/test/resources/features/google_search.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>io.loop.step_definitions.Hook.teardown(io.cucumber.java.Scenario)</span>
+      <div>Search functionality result title verification
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>Search functionality result title verification</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_in_on_google_search_page()">
+                <span>Given user in on Google search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_types_in_the_google_search_box_and_clicks_enter(java.lang.String)">
+                <span>When user types "Loop Academy" in the google search box and clicks enter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_should_see_in_the_google_title(java.lang.String)">
+                <span>Then user should see "Loop Academy - Google Search" in the google title</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Loop Academy - Google Search". Current title: "https://www.google.com/search?q=Loop+Academy&sca_esv=45ef1915294fa958&source=hp&ei=tsHEZ8G9J9yw5NoP8Zm2sAc&iflsig=ACkRmUkAAAAAZ8TPxmQ3E530sYwsUjvA48c0hIy29hr6&ved=0ahUKEwjB8NSmoOyLAxVcGFkFHfGMDXYQ4dUDCBA&uact=5&oq=Loop+Academy&gs_lp=Egdnd3Mtd2l6IgxMb29wIEFjYWRlbXlIHVAAWBtwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcA&sclient=gws-wiz&sei=t8HEZ7u3G4yv5NoPjOehyAM" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\Andrey\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65223/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c08e56df18b9761cbf8100b46e1874aa
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.loop.step_definitions.GoogleSearchStepDefs.user_should_see_in_the_google_title(GoogleSearchStepDefs.java:71)
+	at ✽.user should see "Loop Academy - Google Search" in the google title(file:///C:/Users/Andrey/IdeaProjects/cucumber-project-b4/src/test/resources/features/google_search.feature:15)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>io.loop.step_definitions.Hook.teardown(io.cucumber.java.Scenario)</span>
+      <div>Search functionality result title verification
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="56"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Passing multiple parameters to the same step</p>
+            <p class="text-sm">
+              <span>15:38:28</span> / <span>00:00:01:766</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Passing multiple parameters to the same step</h5>
+<span class='badge badge-success'>03.02.2025 15:38:28</span>
+<span class='badge badge-danger'>03.02.2025 15:38:30</span>
+<span class='badge badge-default'>00:00:01:766</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>Searching multiple items</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_in_on_google_search_page()">
+                <span>Given user in on Google search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.user_searches_the_following_items(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)">
+                <span>Then user searches the following items</span>
+      <div><table class='markup-table table '><tr><td>item</td></tr><tr><td>loop academy</td></tr><tr><td>java</td></tr><tr><td>selenium</td></tr><tr><td>cucumber bdd</td></tr><tr><td>sql</td></tr><tr><td>Pavlo</td></tr><tr><td>Kate</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="io.loop.step_definitions.GoogleSearchStepDefs.we_love_loop_academy()">
+                <span>And we love Loop Academy</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="63"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Scenario Outline practice</p>
+            <p class="text-sm">
+              <span>15:38:30</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Scenario Outline practice</h5>
+<span class='badge badge-success'>03.02.2025 15:38:30</span>
+<span class='badge badge-danger'>03.02.2025 15:38:30</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=63</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:38:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='54'>Then user should see "Loop Academy - Google Search" in the google title</a>
+<div class="">
+<span class="badge badge-default">Google Search Functionality Title Verification.Search functionality result title verification.Then user should see "Loop Academy - Google Search" in the google title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.junit.ComparisonFailure</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:38:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='48'>Then user should be see Loop Academy - Google search in the google title</a>
+<div class="">
+<span class="badge badge-default">Google Search Functionality Title Verification.Search functionality result title verification.Then user should be see Loop Academy - Google search in the google title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@B4G2A-169</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@B4G2A-169</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='35'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Demo how to upload json report to xray.Login as a client</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:37:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a client</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:37:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Login as a employee</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a employee</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Login as a advisor</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a advisor</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Login as a supervisor</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a supervisor</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='35'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Demo how to upload json report to xray.Login as a client</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:38:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='44'>Search functionality result title verification</a>
+<div class="">
+<span class="badge badge-default">Google Search Functionality Title Verification.Search functionality result title verification</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:38:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='50'>Search functionality result title verification</a>
+<div class="">
+<span class="badge badge-default">Google Search Functionality Title Verification.Search functionality result title verification</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='56' id='57'>Searching multiple items</a>
+<div class="">
+<span class="badge badge-default">Passing multiple parameters to the same step.Searching multiple items</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@xray</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@xray</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='35'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Demo how to upload json report to xray.Login as a client</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@B4G2A-162</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@B4G2A-162</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='35'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Demo how to upload json report to xray.Login as a client</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@headless</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@headless</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:37:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a client</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:37:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Login as a employee</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a employee</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Login as a advisor</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a advisor</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Login as a supervisor</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a supervisor</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@google_search_data_table</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@google_search_data_table</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='56' id='57'>Searching multiple items</a>
+<div class="">
+<span class="badge badge-default">Passing multiple parameters to the same step.Searching multiple items</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@B4G2A-122</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@B4G2A-122</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='35'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Demo how to upload json report to xray.Login as a client</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>мар. 2, 2025 03:37:54 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>мар. 2, 2025 03:38:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='20%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'><b>6</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='25%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>34</b> steps passed</small></div>
+<div>
+<small data-tooltip='5%'><b>2</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Docuport Login Logout Feature":9.945,"Demo how to upload json report to xray":2.49,"Google Search Functionality Title Verification":21.918,"Passing multiple parameters to the same step":1.766,"Scenario Outline practice":0
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@B4G2A-169</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>@xray</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@B4G2A-162</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@headless</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@google_search_data_table</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@B4G2A-122</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 6,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 34,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
